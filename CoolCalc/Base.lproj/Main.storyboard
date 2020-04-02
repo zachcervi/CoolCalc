@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoolCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="CoolCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,6 +56,9 @@
                                                         <include reference="uBW-CO-34l"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4HN-Q2-8bW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cb-Pm-IBj" customClass="RoundedButton" customModule="CoolCalc" customModuleProvider="target">
                                                 <rect key="frame" x="92" y="0.0" width="67" height="53"/>
@@ -82,6 +85,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operatorTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLo-JO-Qrg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="but-KC-LDU" customClass="RoundedButton" customModule="CoolCalc" customModuleProvider="target">
                                                 <rect key="frame" x="276" y="0.0" width="67" height="53"/>
@@ -114,6 +120,9 @@
                                                         <include reference="mBo-uS-YyC"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="operatorTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wvK-nD-oWR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -146,6 +155,9 @@
                                                         <include reference="VGb-hi-8ck"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9Q-PL-hTt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaH-Cc-IIq">
                                                 <rect key="frame" x="92" y="0.0" width="67" height="53"/>
@@ -154,6 +166,9 @@
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEG-R8-Tnt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5O-ea-pZZ">
                                                 <rect key="frame" x="184" y="0.0" width="67" height="53"/>
@@ -162,6 +177,9 @@
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJA-BR-WL5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xeb-l2-EO4" customClass="RoundedButton" customModule="CoolCalc" customModuleProvider="target">
                                                 <rect key="frame" x="276" y="0.0" width="67" height="53"/>
@@ -175,6 +193,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operatorTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LnT-au-O8t"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -207,6 +228,9 @@
                                                         <include reference="uYh-3h-auI"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2b6-mT-ZGi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwY-pe-p7b">
                                                 <rect key="frame" x="92" y="0.0" width="67" height="53"/>
@@ -215,6 +239,9 @@
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yAE-CP-uKw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eD-7I-vE9">
                                                 <rect key="frame" x="184" y="0.0" width="67" height="53"/>
@@ -223,6 +250,9 @@
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMz-sE-g4e"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffe-Gl-fAh" customClass="RoundedButton" customModule="CoolCalc" customModuleProvider="target">
                                                 <rect key="frame" x="276" y="0.0" width="67" height="53"/>
@@ -236,6 +266,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operatorTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fgt-fo-KsG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -268,6 +301,9 @@
                                                         <exclude reference="lVv-GI-9LM"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJU-75-ERS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQP-qx-Ezc">
                                                 <rect key="frame" x="92" y="0.0" width="67" height="53"/>
@@ -276,6 +312,9 @@
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c48-K8-h6u"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-gB-WeN">
                                                 <rect key="frame" x="184" y="0.0" width="67" height="53"/>
@@ -284,6 +323,9 @@
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUE-Ab-EFC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13s-V9-OWx" customClass="RoundedButton" customModule="CoolCalc" customModuleProvider="target">
                                                 <rect key="frame" x="276" y="0.0" width="67" height="53"/>
@@ -297,6 +339,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="operatorTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyh-Jx-w5F"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -329,6 +374,9 @@
                                                         <exclude reference="yo4-EQ-VAQ"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gE6-CC-WGl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqX-re-Uqh">
                                                 <rect key="frame" x="92" y="0.0" width="67" height="53"/>
@@ -337,6 +385,9 @@
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcF-52-Cel"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY3-it-bRM">
                                                 <rect key="frame" x="184" y="0.0" width="67" height="53"/>
@@ -345,6 +396,9 @@
                                                 <state key="normal" title="00">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zej-ft-ywj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-ve-57S" customClass="RoundedButton" customModule="CoolCalc" customModuleProvider="target">
                                                 <rect key="frame" x="276" y="0.0" width="67" height="53"/>
@@ -358,6 +412,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="equalsTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vTN-e9-r7t"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -382,86 +439,50 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2048 x 2 / 4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udx-gB-2ir">
-                                <rect key="frame" x="16" y="0.0" width="343" height="179"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.096891961959999995" green="0.52529227479999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmf-Fh-Owt" secondAttribute="trailing" constant="16" id="08t-dD-tSh"/>
                             <constraint firstItem="5bP-qv-aGm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2WK-Q0-esB"/>
-                            <constraint firstAttribute="trailing" secondItem="Udx-gB-2ir" secondAttribute="trailing" constant="20" id="3TG-bt-v6s"/>
-                            <constraint firstItem="Udx-gB-2ir" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7ez-q6-QGG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmf-Fh-Owt" secondAttribute="trailing" constant="16" id="9Cb-0a-iUo"/>
                             <constraint firstItem="Mmf-Fh-Owt" firstAttribute="top" secondItem="5bP-qv-aGm" secondAttribute="bottom" constant="64.666666666666686" id="BJG-YO-Kbd">
                                 <variation key="heightClass=compact" constant="8"/>
                             </constraint>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Udx-gB-2ir" secondAttribute="trailing" constant="16" id="Ch9-UE-3k4"/>
-                            <constraint firstItem="5bP-qv-aGm" firstAttribute="top" secondItem="Udx-gB-2ir" secondAttribute="bottom" constant="8" id="E8G-kO-gvw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5bP-qv-aGm" secondAttribute="trailing" constant="16" id="EbS-e5-0uA"/>
                             <constraint firstItem="5bP-qv-aGm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HGf-4d-cd9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmf-Fh-Owt" secondAttribute="trailing" constant="16" id="Kx8-73-CKa"/>
                             <constraint firstItem="5bP-qv-aGm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Q8a-YD-nGB"/>
-                            <constraint firstItem="Udx-gB-2ir" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QTn-ff-eF4"/>
-                            <constraint firstItem="Mmf-Fh-Owt" firstAttribute="top" secondItem="Udx-gB-2ir" secondAttribute="bottom" constant="8" id="SAB-UV-E83"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mmf-Fh-Owt" secondAttribute="bottom" constant="16" id="SkM-Ez-qHF"/>
                             <constraint firstItem="Mmf-Fh-Owt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YLD-r3-or8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5bP-qv-aGm" secondAttribute="trailing" constant="16" id="YPv-3V-XiR"/>
-                            <constraint firstItem="Udx-gB-2ir" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cbf-mr-b7d">
-                                <variation key="heightClass=compact" constant="0.0"/>
-                            </constraint>
                             <constraint firstItem="Mmf-Fh-Owt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ceh-RB-P1I"/>
                             <constraint firstItem="Mmf-Fh-Owt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dZe-mC-jjr"/>
                             <constraint firstItem="Mmf-Fh-Owt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fda-UM-K1A"/>
-                            <constraint firstItem="Mmf-Fh-Owt" firstAttribute="top" secondItem="Udx-gB-2ir" secondAttribute="bottom" constant="8" id="h1C-bo-eZO"/>
-                            <constraint firstItem="5bP-qv-aGm" firstAttribute="top" secondItem="Udx-gB-2ir" secondAttribute="bottom" constant="8" id="hy0-5N-uaX"/>
-                            <constraint firstItem="5bP-qv-aGm" firstAttribute="top" secondItem="Udx-gB-2ir" secondAttribute="bottom" constant="8" id="jSR-oi-p2v"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmf-Fh-Owt" secondAttribute="trailing" constant="20" id="jnj-WY-Rd9"/>
                             <constraint firstItem="Mmf-Fh-Owt" firstAttribute="top" secondItem="5bP-qv-aGm" secondAttribute="bottom" id="kFf-TR-UiJ"/>
-                            <constraint firstItem="Udx-gB-2ir" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kMK-eI-feu"/>
-                            <constraint firstItem="Mmf-Fh-Owt" firstAttribute="top" secondItem="Udx-gB-2ir" secondAttribute="bottom" constant="8" id="lrO-2K-leK">
-                                <variation key="heightClass=compact" constant="60"/>
-                            </constraint>
                             <constraint firstItem="Mmf-Fh-Owt" firstAttribute="top" secondItem="5bP-qv-aGm" secondAttribute="bottom" constant="8" id="oWW-VL-byw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmf-Fh-Owt" secondAttribute="trailing" constant="20" id="ooO-AN-aVO"/>
                             <constraint firstAttribute="trailing" secondItem="5bP-qv-aGm" secondAttribute="trailing" constant="20" id="p5m-Lo-g6j"/>
                             <constraint firstItem="Mmf-Fh-Owt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sAU-Hm-PZZ"/>
                             <constraint firstItem="Mmf-Fh-Owt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="t8T-XN-RAy"/>
-                            <constraint firstItem="Udx-gB-2ir" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="umq-QM-yXL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Udx-gB-2ir" secondAttribute="trailing" constant="16" id="w5h-tP-Q5W"/>
                             <constraint firstItem="Mmf-Fh-Owt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="w85-RZ-lmz"/>
-                            <constraint firstItem="Udx-gB-2ir" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="z05-Cg-Yiy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="08t-dD-tSh"/>
                                 <exclude reference="9Cb-0a-iUo"/>
-                                <exclude reference="Ch9-UE-3k4"/>
                                 <exclude reference="EbS-e5-0uA"/>
                                 <exclude reference="jnj-WY-Rd9"/>
                                 <exclude reference="ooO-AN-aVO"/>
-                                <exclude reference="3TG-bt-v6s"/>
-                                <exclude reference="QTn-ff-eF4"/>
-                                <exclude reference="cbf-mr-b7d"/>
-                                <exclude reference="kMK-eI-feu"/>
-                                <exclude reference="z05-Cg-Yiy"/>
-                                <exclude reference="E8G-kO-gvw"/>
                                 <exclude reference="HGf-4d-cd9"/>
                                 <exclude reference="Q8a-YD-nGB"/>
-                                <exclude reference="jSR-oi-p2v"/>
                                 <exclude reference="p5m-Lo-g6j"/>
                                 <exclude reference="BJG-YO-Kbd"/>
-                                <exclude reference="SAB-UV-E83"/>
                                 <exclude reference="YLD-r3-or8"/>
                                 <exclude reference="ceh-RB-P1I"/>
                                 <exclude reference="dZe-mC-jjr"/>
                                 <exclude reference="fda-UM-K1A"/>
-                                <exclude reference="h1C-bo-eZO"/>
-                                <exclude reference="lrO-2K-leK"/>
                                 <exclude reference="oWW-VL-byw"/>
                                 <exclude reference="sAU-Hm-PZZ"/>
                                 <exclude reference="w85-RZ-lmz"/>
@@ -471,37 +492,22 @@
                             <mask key="constraints">
                                 <exclude reference="08t-dD-tSh"/>
                                 <include reference="9Cb-0a-iUo"/>
-                                <include reference="Ch9-UE-3k4"/>
                                 <include reference="EbS-e5-0uA"/>
                                 <exclude reference="Kx8-73-CKa"/>
                                 <exclude reference="SkM-Ez-qHF"/>
                                 <exclude reference="YPv-3V-XiR"/>
                                 <exclude reference="jnj-WY-Rd9"/>
                                 <exclude reference="ooO-AN-aVO"/>
-                                <exclude reference="w5h-tP-Q5W"/>
-                                <exclude reference="3TG-bt-v6s"/>
-                                <exclude reference="7ez-q6-QGG"/>
-                                <include reference="QTn-ff-eF4"/>
-                                <exclude reference="cbf-mr-b7d"/>
-                                <exclude reference="kMK-eI-feu"/>
-                                <exclude reference="umq-QM-yXL"/>
-                                <include reference="z05-Cg-Yiy"/>
                                 <exclude reference="2WK-Q0-esB"/>
-                                <exclude reference="E8G-kO-gvw"/>
                                 <include reference="HGf-4d-cd9"/>
                                 <exclude reference="Q8a-YD-nGB"/>
-                                <exclude reference="hy0-5N-uaX"/>
-                                <include reference="jSR-oi-p2v"/>
                                 <exclude reference="p5m-Lo-g6j"/>
                                 <exclude reference="BJG-YO-Kbd"/>
-                                <exclude reference="SAB-UV-E83"/>
                                 <include reference="YLD-r3-or8"/>
                                 <exclude reference="ceh-RB-P1I"/>
                                 <exclude reference="dZe-mC-jjr"/>
                                 <exclude reference="fda-UM-K1A"/>
-                                <exclude reference="h1C-bo-eZO"/>
                                 <exclude reference="kFf-TR-UiJ"/>
-                                <include reference="lrO-2K-leK"/>
                                 <exclude reference="oWW-VL-byw"/>
                                 <exclude reference="sAU-Hm-PZZ"/>
                                 <exclude reference="t8T-XN-RAy"/>
@@ -509,6 +515,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="resultLbl" destination="5bP-qv-aGm" id="t4g-4q-uNF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
