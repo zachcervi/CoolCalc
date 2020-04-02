@@ -10,7 +10,7 @@
 		5E127F0024319CB300B61030 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E127EFF24319CB300B61030 /* RoundedButton.swift */; };
 		5E1BD349243199F400F101E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BD348243199F400F101E2 /* AppDelegate.swift */; };
 		5E1BD34B243199F400F101E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BD34A243199F400F101E2 /* SceneDelegate.swift */; };
-		5E1BD34D243199F400F101E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BD34C243199F400F101E2 /* ViewController.swift */; };
+		5E1BD34D243199F400F101E2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BD34C243199F400F101E2 /* MainVC.swift */; };
 		5E1BD350243199F400F101E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E1BD34E243199F400F101E2 /* Main.storyboard */; };
 		5E1BD352243199F700F101E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1BD351243199F700F101E2 /* Assets.xcassets */; };
 		5E1BD355243199F700F101E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E1BD353243199F700F101E2 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		5E1BD345243199F400F101E2 /* CoolCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E1BD348243199F400F101E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E1BD34A243199F400F101E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E1BD34C243199F400F101E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E1BD34C243199F400F101E2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = ../MainVC.swift; sourceTree = "<group>"; };
 		5E1BD34F243199F400F101E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E1BD351243199F700F101E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E1BD354243199F700F101E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +57,7 @@
 		5E127EFE24319C6900B61030 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5E1BD34C243199F400F101E2 /* MainVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -85,7 +86,6 @@
 				5E127EFC24319C5600B61030 /* View */,
 				5E1BD348243199F400F101E2 /* AppDelegate.swift */,
 				5E1BD34A243199F400F101E2 /* SceneDelegate.swift */,
-				5E1BD34C243199F400F101E2 /* ViewController.swift */,
 				5E1BD34E243199F400F101E2 /* Main.storyboard */,
 				5E1BD351243199F700F101E2 /* Assets.xcassets */,
 				5E1BD353243199F700F101E2 /* LaunchScreen.storyboard */,
@@ -165,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1BD34D243199F400F101E2 /* ViewController.swift in Sources */,
+				5E1BD34D243199F400F101E2 /* MainVC.swift in Sources */,
 				5E1BD349243199F400F101E2 /* AppDelegate.swift in Sources */,
 				5E1BD34B243199F400F101E2 /* SceneDelegate.swift in Sources */,
 				5E127F0024319CB300B61030 /* RoundedButton.swift in Sources */,
