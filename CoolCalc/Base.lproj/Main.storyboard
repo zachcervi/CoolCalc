@@ -72,6 +72,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="plusMinusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KF1-8T-ITF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZU-Vt-49b" customClass="RoundedButton" customModule="CoolCalc" customModuleProvider="target">
                                                 <rect key="frame" x="184" y="0.0" width="67" height="53"/>
@@ -348,38 +351,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="FmP-5w-iza">
                                         <rect key="frame" x="0.0" y="356" width="343" height="53"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGE-Md-S64">
-                                                <rect key="frame" x="0.0" y="0.0" width="67" height="53"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="6lS-hn-EHc"/>
-                                                    <constraint firstAttribute="width" constant="40" id="D0k-TT-Xv7"/>
-                                                    <constraint firstAttribute="width" secondItem="vGE-Md-S64" secondAttribute="height" multiplier="1:1" id="yo4-EQ-VAQ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
-                                                <state key="normal" title=".">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="6lS-hn-EHc"/>
-                                                        <exclude reference="D0k-TT-Xv7"/>
-                                                        <exclude reference="yo4-EQ-VAQ"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="6lS-hn-EHc"/>
-                                                        <exclude reference="D0k-TT-Xv7"/>
-                                                        <exclude reference="yo4-EQ-VAQ"/>
-                                                    </mask>
-                                                </variation>
-                                                <connections>
-                                                    <action selector="numberTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gE6-CC-WGl"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqX-re-Uqh">
-                                                <rect key="frame" x="92" y="0.0" width="67" height="53"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="97.5" height="53"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
                                                 <state key="normal" title="0">
@@ -390,7 +363,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY3-it-bRM">
-                                                <rect key="frame" x="184" y="0.0" width="67" height="53"/>
+                                                <rect key="frame" x="122.5" y="0.0" width="98" height="53"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
                                                 <state key="normal" title="00">
@@ -401,7 +374,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-ve-57S" customClass="RoundedButton" customModule="CoolCalc" customModuleProvider="target">
-                                                <rect key="frame" x="276" y="0.0" width="67" height="53"/>
+                                                <rect key="frame" x="245.5" y="0.0" width="97.5" height="53"/>
                                                 <color key="backgroundColor" red="0.79607844350000001" green="0.2392156869" blue="0.082352943720000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
                                                 <state key="normal" title="=">

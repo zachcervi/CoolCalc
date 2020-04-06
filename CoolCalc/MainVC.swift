@@ -80,7 +80,20 @@ class MainVC: UIViewController {
    
            
     }
-
+    @IBAction func plusMinusPressed(_ sender: Any) {
+        var displayNumber = resultLbl.text!
+        
+        if(displayNumber != "0"){
+            if(displayNumber.prefix(1) != "-"){
+                displayNumber = "-" + displayNumber
+            } else {
+                displayNumber.remove(at: displayNumber.startIndex)
+            }
+            
+            resultLbl.text = displayNumber
+        }
+    }
+    
     @IBAction func clearButtonPressed(_ sender: Any) {
         reset()
     }
