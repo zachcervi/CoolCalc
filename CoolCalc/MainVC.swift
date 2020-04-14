@@ -14,6 +14,7 @@ class MainVC: UIViewController {
     var firstNumber = 0
     var secondNumber = 0
     var operation = ""
+     var result = 0
     
     @IBOutlet weak var resultLbl: UILabel!
     
@@ -30,6 +31,7 @@ class MainVC: UIViewController {
             resultLbl.text = number as! String
             isTypingNumber = true
         }
+        print(number!)
     }
     
     @IBAction func operatorTapped(sender: AnyObject){
@@ -38,12 +40,13 @@ class MainVC: UIViewController {
         firstNumber = Int(num)!
         operation = sender.currentTitle!
         resultLbl.text = operation
+        result = calculate(operation: operation)
         
     }
     
     @IBAction func equalsTapped(sender: AnyObject){
         isTypingNumber = false
-        var result = 0
+       
         let num: String = resultLbl.text!
         secondNumber = Int(num)!
         
@@ -64,6 +67,25 @@ class MainVC: UIViewController {
            result = 0
         }
         resultLbl.text = "\(result)"
+    }
+    
+    func calculate(operation: String) -> Int{
+        var result = 0
+        switch operation {
+               case "+":
+                   result = firstNumber + secondNumber
+               case "-":
+                   result = firstNumber - secondNumber
+               case "x":
+                   result = firstNumber * secondNumber
+               case "/":
+                   result = firstNumber / secondNumber
+               case "%":
+                   result = firstNumber % secondNumber
+               default:
+                  result = 0
+               }
+        return result
     }
     
     func reset(){
