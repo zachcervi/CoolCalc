@@ -11,10 +11,10 @@ import UIKit
 class MainVC: UIViewController {
 
     var isTypingNumber = false
-    var firstNumber = 0
-    var secondNumber = 0
+    var firstNumber: Double?
+    var secondNumber: Double?
     var operation = ""
-     var result = 0
+    var result: Double = 0.0
     
     @IBOutlet weak var resultLbl: UILabel!
     
@@ -24,67 +24,79 @@ class MainVC: UIViewController {
     }
     
     @IBAction func numberTapped(sender: AnyObject){
-        var number = sender.currentTitle
+        let number = sender.currentTitle
+
         if isTypingNumber {
-            resultLbl.text = resultLbl.text! + number!!
+            if let num = number {
+                resultLbl.text = resultLbl.text! + num!
+            }
         } else {
-            resultLbl.text = number as! String
+            resultLbl.text = number!!
             isTypingNumber = true
         }
-        print(number!)
+    
+        
+       
     }
     
     @IBAction func operatorTapped(sender: AnyObject){
         isTypingNumber = false
         let num: String = resultLbl.text!
-        firstNumber = Int(num)!
+       firstNumber = Double(num)
         operation = sender.currentTitle!
         resultLbl.text = operation
         result = calculate(operation: operation)
-        
+ 
     }
     
     @IBAction func equalsTapped(sender: AnyObject){
         isTypingNumber = false
        
         let num: String = resultLbl.text!
-        secondNumber = Int(num)!
+        secondNumber = Double(num)
         
-        switch operation {
-        case "+":
-            print(firstNumber)
-            print(secondNumber)
-            result = firstNumber + secondNumber
-        case "-":
-            result = firstNumber - secondNumber
-        case "x":
-            result = firstNumber * secondNumber
-        case "/":
-            result = firstNumber / secondNumber
-        case "%":
-            result = firstNumber % secondNumber
-        default:
-           result = 0
+        if let first = firstNumber {
+            if let second = secondNumber {
+                switch operation {
+                       case "+":
+                           result = first + second
+                       case "-":
+                           result = first - second
+                       case "x":
+                           result = first * second
+                       case "/":
+                           result = first / second
+                       case "%":
+                        result = first.truncatingRemainder(dividingBy: second);
+                       default:
+                          result = 0
+                       }
+            }
         }
         resultLbl.text = "\(result)"
     }
     
-    func calculate(operation: String) -> Int{
-        var result = 0
-        switch operation {
-               case "+":
-                   result = firstNumber + secondNumber
-               case "-":
-                   result = firstNumber - secondNumber
-               case "x":
-                   result = firstNumber * secondNumber
-               case "/":
-                   result = firstNumber / secondNumber
-               case "%":
-                   result = firstNumber % secondNumber
-               default:
-                  result = 0
-               }
+    func calculate(operation: String) -> Double {
+        if let first = firstNumber {
+            if let second = secondNumber {
+                print(first)
+                print(second)
+                switch operation {
+                       case "+":
+                           result = first + second
+                       case "-":
+                           result = first - second
+                       case "x":
+                           result = first * second
+                       case "/":
+                           result = first / second
+                       case "%":
+                        result = first.truncatingRemainder(dividingBy: second);
+                       default:
+                          result = 0
+                       }
+            }
+        }
         return result
     }
     
@@ -99,8 +111,6 @@ class MainVC: UIViewController {
                operation = ""
               resultLbl.text = "0"
         }
-   
-           
     }
     @IBAction func plusMinusPressed(_ sender: Any) {
         var displayNumber = resultLbl.text!
